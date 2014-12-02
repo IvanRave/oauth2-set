@@ -1,7 +1,6 @@
 /** @module */
 'use strict';
-var dhr = require('../vmg-helpers/dom');
-var ahr = require('../vmg-helpers/app');
+
 var mdlAuthIssuer = require('./auth-issuer');
 
 /**
@@ -19,14 +18,14 @@ mdlAuthIssuer.inhMethods(Mdl);
  * Start dev auth
  */
 Mdl.prototype.startAuth = function(elem) {
-  dhr.disable(elem);
+  elem.disabled = true;
   var userNumber = window.prompt('User # (from 1 to 9):');
   if (!userNumber) {
     alert('required: user #');
     return;
   }
 
-  userNumber = ahr.toInt(userNumber);
+  userNumber = parseInt(userNumber);
   if (userNumber >= 1 && userNumber <= 9) {
     this.social_token = 'snid' + userNumber;  
     this.postLoginToApi();
