@@ -1,0 +1,19 @@
+{
+  "name": "oauth2-set",
+  "version": "0.1.0",
+  "description": "Generate OAUTH2 buttons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IvanRave/oauth2-set.git"
+  },
+  "author": "IvanRave",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IvanRave/oauth2-set/issues"
+  },
+  "homepage": "https://github.com/IvanRave/oauth2-set"
+}
